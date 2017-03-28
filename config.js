@@ -51,11 +51,13 @@ var config = {
   pushNotificationsOpts: {
     templatePath: './lib/templates',
     defaultLanguage: 'en',
+    defaultUnit: 'grs',
     subjectPrefix: '',
     pushServerUrl: 'http://localhost:8000',
   },
   fiatRateServiceOpts: {
     defaultProvider: 'BitPay',
+    fetchInterval: 30, // in minutes
   },
   // To use email notifications uncomment this:
   // emailOpts: {
