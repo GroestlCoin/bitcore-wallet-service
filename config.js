@@ -38,7 +38,7 @@ var config = {
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://insight.bitpay.com:443',
+      url: 'http://localhost:3030',
     },
     testnet: {
       provider: 'insight',
@@ -51,13 +51,11 @@ var config = {
   pushNotificationsOpts: {
     templatePath: './lib/templates',
     defaultLanguage: 'en',
-    defaultUnit: 'btc',
     subjectPrefix: '',
     pushServerUrl: 'http://localhost:8000',
   },
   fiatRateServiceOpts: {
     defaultProvider: 'BitPay',
-    fetchInterval: 60, // in minutes
   },
   // To use email notifications uncomment this:
   // emailOpts: {
